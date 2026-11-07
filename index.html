@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2fc9">
+<title>वकील शनि – सुलेखा देवी को ₹10,000 उधार का हिसाब</title>
+<!-- Favicon (HTML): ₹ + वकील शनि -->
+<link id="fav" rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="msapplication-config" content="browserconfig.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+<aside class="side grad">
+  <div class="brand">
+    <div class="logo" role="img" aria-label="₹ लोगो"></div>
+    <div>
+      <h1 class="name">वकील शनि</h1>
+      <p class="sub">सुलेखा देवी को दिया उधार</p>
+    </div>
+  </div>
+  <span class="pill">3% प्रति माह · 36% सालाना</span>
+  <nav class="sidenav" aria-label="मेन्यू">
+    <a href="#hisab">📅 हर महीने का हिसाब</a>
+    <a href="#calc">🧮 कैलकुलेटर</a>
+    <a href="#baatein">⚠️ ज़रूरी बातें</a>
+  </nav>
+  <div class="sidefacts">
+    <div><small>उधार की तारीख़</small><b>6 नवंबर 2026</b></div>
+    <div><small>मूलधन</small><b>₹10,000</b></div>
+    <div><small>एक महीने का ब्याज</small><b>₹300</b></div>
+  </div>
+</aside>
+
+<main>
+  <section class="hero" aria-label="सारांश">
+    <div>
+      <small id="asof">आज की तारीख़ तक कुल बकाया</small>
+      <div class="serif" id="total">₹10,000</div>
+    </div>
+    <div class="barbox">
+      <div class="bar" aria-hidden="true"><i id="pbar" style="width:100%"></i><b id="ibar" style="width:0"></b></div>
+      <div class="bl"><span>मूलधन</span><span>ब्याज</span></div>
+    </div>
+  </section>
+
+  <div class="tiles">
+    <div class="tile t1"><small>मूलधन</small><b>₹10,000</b></div>
+    <div class="tile t2"><small>अब तक का ब्याज</small><b id="int">₹0</b></div>
+    <div class="tile t3"><small>बीते दिन</small><b id="days">0</b></div>
+    <div class="tile t4"><small>एक महीने का ब्याज</small><b>₹300</b></div>
+  </div>
+  <div class="next"><small>अगली तारीख़ पर बकाया</small><b id="nextv"></b></div>
+
+  <h2 id="hisab">हर महीने का हिसाब</h2>
+  <p class="hint">साधारण ब्याज: हर महीने ₹300 जुड़ता है। बीती तारीख़ पर हरा निशान है।</p>
+  <ol class="sched" id="sched"></ol>
+
+  <div class="two">
+    <div>
+      <h2 id="calc">कितने महीने में कितना?</h2>
+      <p class="hint">स्लाइडर खिसकाकर देखें।</p>
+      <div class="calc">
+        <label for="rng">अवधि: <span id="rv">6</span> महीने</label>
+        <input type="range" id="rng" min="1" max="36" value="6">
+        <div class="out">
+          <div><small>कुल ब्याज</small><b id="o1"></b></div>
+          <div><small>कुल वापसी रक़म</small><b id="o2"></b></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 id="baatein">ज़रूरी बातें</h2>
+      <p class="hint">उधार लेते समय याद रखें।</p>
+      <ul class="notes">
+        <li class="w">3% प्रति माह यानी 36% सालाना है, जो बैंक या NBFC लोन (लगभग 10–24%) से काफ़ी ज़्यादा है।</li>
+        <li class="w">सिर्फ़ ब्याज देते रहने से मूलधन ₹10,000 जस का तस रहता है।</li>
+        <li>लिखित में रखें: कितना पैसा लिया, ब्याज कितना और कब तक लौटाना है।</li>
+        <li>हर भुगतान की रसीद या UPI/बैंक रिकॉर्ड सँभालकर रखें।</li>
+        <li>ज़्यादा दबाव डाले तो स्थानीय पुलिस या बैंक से सलाह लें।</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>यह हिसाब अंदाज़े के लिए है। असली रक़म वही मानी जाएगी जो आपके बीच तय हुई है।</footer>
+</main>
+</div>
+
+<nav class="tabbar" aria-label="नीचे का मेन्यू">
+  <a href="#hisab"><span>📅</span>हिसाब</a>
+  <a href="#calc"><span>🧮</span>कैलकुलेटर</a>
+  <a href="#baatein"><span>⚠️</span>बातें</a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
